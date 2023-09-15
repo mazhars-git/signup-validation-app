@@ -10,6 +10,7 @@ import DefaultPage from '../SignupPages/DefaultPage';
 import FirstPage from '../SignupPages/FirstPage';
 import SecondPage from '../SignupPages/SecondPage';
 import ThirdPage from '../SignupPages/ThirdPage';
+import '../../../Css/Signup.css';
 
 const steps = ['Step', 'Step', 'Step', 'Step'];
 
@@ -65,7 +66,7 @@ export default function Signup() {
                     <DefaultPage />
                 </Grid>
                 <Grid md={6} sm={12}>
-                    <div className='p-4'>
+                    <div className='signup-box'>
                         <Box sx={{ width: '100%' }}>
                             <Stepper activeStep={activeStep}>
                                 {steps.map((label, index) => {

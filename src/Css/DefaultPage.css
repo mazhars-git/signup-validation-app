@@ -1,3 +1,9 @@
+.default-pg-box{
+    border-radius: 10px;
+    padding-bottom: 35px;
+    margin-right: 7px;
+    box-shadow: 5px 5px 5px rgb(231, 230, 230);
+}
 .default-pg h1{
    font-size: 38px;
    font-weight: 500;
@@ -12,4 +18,7 @@
 }
 .default-content {
     margin-bottom: 32px;
+}
+.default-content p{
+    font-size: 18px;
 }
