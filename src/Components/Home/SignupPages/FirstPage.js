@@ -39,10 +39,10 @@ const FirstPage = () => {
                 }) => (
                     <form className='form-step-1' onSubmit={handleSubmit}>
 
-                        <label for="firstName" class="form-label">First Name <span style={{color: 'red'}}>*</span></label>
+                        <label for="firstName" class="form-label">First Name <span style={{ color: 'red' }}>*</span></label>
                         <input type="text" class="form-control" name='firstName' id="firstName" placeholder='First Name' required />
 
-                        <label for="lastName" className='form-label' >Last Name <span style={{color: 'red'}}>*</span></label>
+                        <label for="lastName" className='form-label' >Last Name <span style={{ color: 'red' }}>*</span></label>
                         <input
                             type="text"
                             class="form-control"
@@ -52,9 +52,9 @@ const FirstPage = () => {
                             value={values.lastName}
                             placeholder='Last Name'
                         />
-                        {errors.email && touched.email && errors.email} <br/>
+                        {errors.email && touched.email && errors.email} <br />
 
-                        <label for="email" className='form-label' >Email Address <span style={{color: 'red'}}>*</span></label>
+                        <label for="email" className='form-label' >Email Address <span style={{ color: 'red' }}>*</span></label>
                         <input
                             class="form-control"
                             type="email"
@@ -62,7 +62,7 @@ const FirstPage = () => {
                             onChange={handleChange}
                             onBlur={handleBlur}
                             value={values.email}
-                            placeholder='email'
+                            placeholder='johndoe12@gmail.com'
                         />
                         {errors.email && touched.email && errors.email} <br />
                         {/* <input
@@ -75,6 +75,16 @@ const FirstPage = () => {
                         />
                         {errors.password && touched.password && errors.password}
                         <br /> */}
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required />
+                        <label class="form-check-label" for="invalidCheck2">
+                            By checking this box, you agree to be added to our mailing list. You can opt out at any time.
+                        </label>
+                        <br/>
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required />
+                        <label class="form-check-label" for="invalidCheck2">
+                            By Checking this box, you agree to our <a href=''>Terms of Service</a> and <a href="">Privacy Policy</a>.
+                        </label>
+
                         <br />
                         <button type="submit" className='btn btn-primary form-control' disabled={isSubmitting}>
                             Submit
