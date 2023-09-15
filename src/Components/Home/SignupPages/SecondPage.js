@@ -12,7 +12,7 @@ const SecondPage = () => {
 
     return (
         <div>
-            <h1>Create A Password</h1>
+            <h2>Create A Password</h2>
             <FormControl sx={{ m: 1, width: '25ch' }} variant="outlined">
                 <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
                 <OutlinedInput
