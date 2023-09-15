@@ -3,7 +3,7 @@ import { Formik } from 'formik';
 
 const FirstPage = () => {
     return (
-        <div>
+        <div className=''>
             <h1>Contact Information</h1>
             <Formik
                 initialValues={{ email: '', password: '' }}

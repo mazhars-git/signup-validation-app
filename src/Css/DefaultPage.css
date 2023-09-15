@@ -1,0 +1,15 @@
+.default-pg h1{
+   font-size: 38px;
+   font-weight: 500;
+}
+.default-pg h2{
+    font-size: 32px;
+    color: #0967AF;
+    margin-bottom: 40px;
+}
+.default-pg h3{
+    margin-bottom: 12px;
+}
+.default-content {
+    margin-bottom: 32px;
+}
