@@ -13,3 +13,12 @@
 .signup-content h2{
     font-size: 36px;
 }
+.signup-form .form-check-label{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.password-box{
+    min-height: 450px;
+}

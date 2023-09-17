@@ -87,29 +87,29 @@ const FirstPage = () => {
                 {formik.errors.email ? <div>{formik.errors.email}</div> : null}
 
 
-                <div className="form-check p-0">
+                <div className="form-check p-0 d-flex">
                     <input
                         type="checkbox"
                         name="selectCheckbox"
                         id="selectCheckbox"
+                        required
                     />
-                    <label htmlFor="selectCheckbox" className="form-check-label ms-2">
-                        Are you sure?
+                    <label htmlFor="selectCheckbox" className="form-check-label ms-3">
+                        By checking this box, you agree to be added to our mailing list. You can opt out at any time.
                     </label>
                 </div>
 
-                <div className="form-check p-0">
+                <div className="form-check p-0 d-flex">
                     <input
                         type="checkbox"
                         name="conditionCheckbox"
                         id="conditionCheckbox"
+                        required
                     />
-                    <label htmlFor="conditionCheckbox" className="form-check-label ms-2">
-                        Are you sure?
+                    <label htmlFor="conditionCheckbox" className="form-check-label ms-3">
+                        By Checking this box, you agree to our <a href="/">Terms of Service</a> and <a href="">Privacy Policy</a>.
                     </label>
                 </div>
-
-
                 <button className='form-control btn btn-primary' type="submit">Submit</button>
             </form>
         </div>

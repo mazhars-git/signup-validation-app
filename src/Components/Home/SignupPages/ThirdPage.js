@@ -17,7 +17,9 @@ const Item = styled(Paper)(({ theme }) => ({
 const ThirdPage = () => {
     return (
         <div>
-                      
+            <label for="psw">Password</label>
+            <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required />
+
         </div>
     );
 };
