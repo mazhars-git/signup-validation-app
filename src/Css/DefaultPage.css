@@ -32,3 +32,15 @@
     margin-bottom: 20px;
     font-weight: bold;
 }
+
+/* ----------------*/
+.step-four-box .box-content{
+    
+}
+.step-four-box .box-content p{
+    font-size: 13px;
+    line-height: normal;
+    font-style: normal;
+    letter-spacing: 0.08px;
+    font-weight: 400;
+}
