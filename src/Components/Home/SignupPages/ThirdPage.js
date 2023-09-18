@@ -1,9 +1,6 @@
 import React from 'react';
 import { styled } from '@mui/material/styles';
-import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Grid';
-import { Stack } from 'react-bootstrap';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -17,8 +14,16 @@ const Item = styled(Paper)(({ theme }) => ({
 const ThirdPage = () => {
     return (
         <div>
-            <label for="psw">Password</label>
-            <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required />
+            <h2>Payment Setup ($29/month)</h2>
+            <label for="cardNum">Card Number <span style={{color: 'red'}}>*</span></label>
+            <input 
+                type="number" 
+                id="cardNum" 
+                name="cardNum" 
+                placeholder='xxxx-xxxx-xxxx'
+                // pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                required 
+            />
 
         </div>
     );

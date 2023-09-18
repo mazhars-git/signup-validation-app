@@ -11,6 +11,8 @@ import FirstPage from '../SignupPages/FirstPage';
 import SecondPage from '../SignupPages/SecondPage';
 import ThirdPage from '../SignupPages/ThirdPage';
 import '../../../Css/Signup.css';
+import PaymentContent from '../SignupPages/PaymentContent';
+import ForthPage from '../SignupPages/ForthPage';
 
 const steps = ['Step', 'Step', 'Step', 'Step'];
 
@@ -104,10 +106,10 @@ export default function Signup() {
                                 <React.Fragment>
                                     {activeStep === 0 && <FirstPage />}
                                     {activeStep === 1 && <SecondPage />}
-                                    {activeStep === 2 && <SecondPage />}
-                                    {activeStep === 3 && <ThirdPage />}
+                                    {activeStep === 2 && <ThirdPage />}
+                                    {activeStep === 3 && <ForthPage />}
                                     {/* <Typography sx={{ mt: 2, mb: 1 }}>Step {activeStep + 1}</Typography> */}
-                                    <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
+                                    <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2}}>
                                         <Button
                                             color="inherit"
                                             disabled={activeStep === 0}
@@ -128,6 +130,7 @@ export default function Signup() {
                                             {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
                                         </Button>
                                     </Box>
+                                    {activeStep === 2 && <PaymentContent />}
                                 </React.Fragment>
                             )}
                         </Box>

@@ -4,7 +4,7 @@ import TaskAltIcon from '@mui/icons-material/TaskAlt';
 
 const DefaultPage = () => {
     return (
-        <div className='bg-primary-subtle default-pg-box'>
+        <div className='default-pg-box'>
             <div className='default-pg p-4 mr-2'>
                 <h1>Self Help Basic ($29/month)</h1>
                 <h2>Alcohol Program</h2>
