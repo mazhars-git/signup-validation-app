@@ -7,7 +7,6 @@ import './App.css';
 function App() {
   return (
     <Container className="App" maxWidth="xl">
-        <Home></Home>
         <Signup></Signup>
     </Container>
   );

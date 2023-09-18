@@ -62,7 +62,7 @@ export default function Signup() {
     };
 
     return (
-        <Container className=''>
+        <Container className='signup-section'>
             <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                 <Grid md={6} sm={12}>
                     <DefaultPage />
