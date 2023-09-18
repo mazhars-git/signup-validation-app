@@ -6,8 +6,8 @@ import pIcon from '../../../../src/assets/Group.png';
 const ForthPage = () => {
     return (
         <div className="step-four-box">
-            <h3>Please select which coach you would like to work with</h3>
-            <p>You have selected the Self Help Option. This means that your coach will not automatically provide feedback on your exercises. However you will be able to book an introductory coaching session with your coach and you will have the option to upgrade to receive feedback if you wish.</p>
+            <h3 className='py-3'>Please select which coach you would like to work with</h3>
+            <p className='mb-3' style={{fontSize: '16px', lineHeight: '30px', fontWeight:'500'}}>You have selected the Self Help Option. This means that your coach will not automatically provide feedback on your exercises. However you will be able to book an introductory coaching session with your coach and you will have the option to upgrade to receive feedback if you wish.</p>
             
             <div className='box-content default-content d-flex gap-3 mb-3 align-items-start'>
                 <img src={profile1} style={{borderRadius: '50px'}} alt=""/>
