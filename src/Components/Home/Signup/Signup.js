@@ -111,6 +111,7 @@ export default function Signup() {
                                     {/* <Typography sx={{ mt: 2, mb: 1 }}>Step {activeStep + 1}</Typography> */}
                                     <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2}}>
                                         <Button
+                                            variant="contained"
                                             color="inherit"
                                             disabled={activeStep === 0}
                                             onClick={handleBack}
@@ -126,8 +127,8 @@ export default function Signup() {
                                             </Button>
                                         )} */}
 
-                                        <Button onClick={handleNext}>
-                                            {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
+                                        <Button variant="contained" onClick={handleNext}>
+                                            {activeStep === steps.length - 1 ? 'Submit' : 'Next'}
                                         </Button>
                                     </Box>
                                     {activeStep === 2 && <PaymentContent />}
