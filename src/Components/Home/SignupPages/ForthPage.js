@@ -1,6 +1,7 @@
 import React from 'react';
 import profile1 from '../../../../src/assets/Ellipse 6.png';
 import profile2 from '../../../../src/assets/Ellipse 6 (1).png';
+import profile3 from '../../../../src/assets/Ellipse 5.png';
 import pIcon from '../../../../src/assets/Group.png';
 
 const ForthPage = () => {
@@ -28,7 +29,7 @@ const ForthPage = () => {
             </div>
 
             <div className='box-content default-content d-flex gap-3 mb-3 align-items-start'>
-                <img src={profile2} style={{borderRadius: '50px'}} alt=""/>
+                <img src={profile3} style={{borderRadius: '50px'}} alt=""/>
                 <div>
                     <h4 style={{color: '#0967AF'}}>Nazat Fayeza</h4>
                     <p className='m-0 pb-2'>A licensed social worker, Anne began over-drinking to block out humiliation, anxiety, loss and to manage anger during a financial downfall and difficult divorce from a 25 year relationship. Anne was introduced to the world of Harm Reduction after the tragic death of her nephew from an overdose. Helping others regain hope, resilience, purpose, and navigating loss of all kinds became her passion.</p>
